@@ -1,0 +1,66 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.contenedor {
+  @apply max-w-7xl mx-auto w-5/6;
+}
+
+.header {
+  padding: 3rem 0;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(0, 0, 0, 0.6),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url(/img/header.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  padding: 4rem 0;
+}
+
+.title {
+  @apply text-5xl text-amber-500 font-bold text-center;
+}
+
+.grilla{
+  display: grid;
+  grid-template-columns: repeat( auto-fit, minmax(350px, 1fr) );
+  gap: 2.5rem;
+
+}
+
+.imagen{
+  filter: brightness(0.7);
+}
+
+.descripcion{
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 6;
+  overflow: hidden;
+  font-size: 1.2rem;
+}
+
+
+@media(min-width:1024px){
+  .resumen{
+    position: sticky;
+    top: 2rem;
+  }
+}
+
+@media(min-width:768px){
+  .carrito{
+    min-height: 40vh;
+  }
+
+}
+@media(min-width:1024px){
+  .carrito{
+    min-height: 46vh;
+  }
+
+}
+
