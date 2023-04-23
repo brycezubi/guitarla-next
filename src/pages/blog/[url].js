@@ -24,7 +24,7 @@ const BlogUrl = ({ blog }) => {
           <section className='flex flex-col gap-2 max-w-lg mx-auto'>
             <h2 className='text-2xl font-bold text-amber-500'>{titulo}</h2>
             <small className='font-bold'>{formatearFecha(createdAt)}</small>
-            <p className='text-lg'>{contenido}</p>
+            <p className='text-lg whitespace-pre-wrap'>{contenido}</p>
 
             <Link
               className='w-4/5  rounded-md p-1 font-semibold mt-4 text-white text-center uppercase bg-amber-500 mx-auto hover:bg-amber-400  hover:tracking-widest transition-all'
