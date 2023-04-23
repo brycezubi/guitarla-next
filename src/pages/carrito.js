@@ -20,7 +20,7 @@ const CarritoPage = ({carrito,eliminarProducto,actualizarCantidad}) => {
   },[carrito])
 
   return (
-    <Layout title={'carrito de compras}>
+    <Layout title={`carrito de compras `}>
       <main className='contenedor py-10'>
         <h1 className='title'>Carrito</h1>
 
